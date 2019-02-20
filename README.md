@@ -9,9 +9,9 @@ Desenvolver uma aplicação HTML5
 
 ## Especificações tecnicas
 - Utilizar diretrizes do [Google Material Design](https://www.google.com/design/spec/material-design/introduction.html)
-- Utilizar a [API de busca do YouTube](https://developers.google.com/youtube/v3/docs/search/list)
+- Utilizar a [API de busca do YouTube](https://developers.google.com/youtube/v3/docs/)
 - Mobile first e responsivo
-- Usar framework JS (React, Angular ou frameworks relacionados)
+- Usar framework JS (Desejável)
 - Cores livres, layout livre, imagens livres
 
 ## Especificações funcionais
