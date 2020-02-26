@@ -1,0 +1,29 @@
+@import '../../Base.scss';
+
+.pesquisarContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15% 0;   
+    
+    .logo {
+        margin-bottom: 5%;
+        width: 410px;
+        height: 156px;
+    }
+
+    .form {
+        display: flex;
+        width: 50%;
+
+        .search {
+            width: 100%;
+            border-radius: 50% ;
+        }
+  
+        .btnSearch {
+            margin-left: 2%;
+        }
+    }
+}
