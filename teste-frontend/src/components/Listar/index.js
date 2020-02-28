@@ -10,18 +10,18 @@ const Items = ({video}) => {
 
   return (
     <List className="list">
-    <ListItem button onClick={handleClick} className="listItem">
-        <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.description} className="image"/>
-        <ListItemText primary={video.snippet.title} className="title" />
-        {open ? <ExpandLess /> : <ExpandMore />}
-    </ListItem>
-    <Collapse in={open} timeout="auto" unmountOnExit>
-        <List>
-        <ListItem button >
-            <ListItemText primary={video.snippet.description} />
+        <ListItem button onClick={handleClick} className="listItem">
+            <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.description}/>
+            <ListItemText primary={video.snippet.title} className="title" />
+            {open ? <ExpandLess /> : <ExpandMore />}
         </ListItem>
-        </List>
-    </Collapse>
+        <Collapse in={open} timeout="auto" unmountOnExit>
+            <List>
+            <ListItem button >
+                <ListItemText primary={video.snippet.description} />
+            </ListItem>
+            </List>
+        </Collapse>
     </List>
   );
 }

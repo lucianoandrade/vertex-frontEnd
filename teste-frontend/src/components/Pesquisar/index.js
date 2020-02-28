@@ -5,6 +5,7 @@ import logo from "./img/acheVideos.png";
 import "./styles.scss";
 
 function Pesquisar ({ onTerm }) {
+  const [animation, setAnimation] = useState({margin: '15% 0'});
   
   const [term, setTerm] = useState("");
   const handleChange = (e) => {
@@ -17,7 +18,7 @@ function Pesquisar ({ onTerm }) {
   }
 
   return (
-    <section className="pesquisarContainer">
+    <section className="pesquisarContainer" style={animation}>
       <h2>
         <img className="logo" src={logo} alt="Logo Ache Videos" />
       </h2>  
@@ -37,6 +38,10 @@ function Pesquisar ({ onTerm }) {
           className="btnSearch" 
           variant="contained" 
           color="primary"
+          onClick={() => setAnimation({
+                          margin: '0 0 5% 0', 
+                          transitionDuration: "1s"                                 
+          })}
         >
           Buscar
         </Button>

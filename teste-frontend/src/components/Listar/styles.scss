@@ -1,14 +1,18 @@
 @import '../../Base.scss';
 
+ul.MuiList-root.list.MuiList-padding {
+    margin: 0 20%;
+}
+
 .list {
-    width: 100%;
+    width: 60%;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 
     .listItem {
         .title {
-            margin-left: 5%;
+            margin: 0 5%;
         }
     }
 }
