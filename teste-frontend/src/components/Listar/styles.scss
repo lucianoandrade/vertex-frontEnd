@@ -1,0 +1,14 @@
+@import '../../Base.scss';
+
+.list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .listItem {
+        .title {
+            margin-left: 5%;
+        }
+    }
+}

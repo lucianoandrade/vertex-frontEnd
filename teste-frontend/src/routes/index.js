@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import pesquisar from '../views/pesquisar/pesquisar';
+import pesquisar from '../views/acheVideos';
 
 const Routes = () => (
     <BrowserRouter>

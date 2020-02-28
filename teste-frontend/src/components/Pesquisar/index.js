@@ -2,27 +2,18 @@ import React, { useState } from "react";
 import { TextField, Button } from "@material-ui/core";
 
 import logo from "./img/acheVideos.png";
-import youtube from "../../services/youtube";
-
 import "./styles.scss";
 
-function Pesquisar() {
+function Pesquisar ({ onTerm }) {
+  
   const [term, setTerm] = useState("");
- 
   const handleChange = (e) => {
     setTerm(e.target.value);
-  }  
-
-  async function handleSubmit () {
-    const response = await youtube.get("search", {
-      params: {
-        part:'snippet',
-        maxResults: 10,
-        key: 'AIzaSyDdu3OaB_m--RiVza76T_IBLhdzUhaaAkc',
-        q: term
-      }
-    });
-    console.log(response)    
+  }
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();  
+    onTerm(term)
   }
 
   return (
@@ -30,7 +21,7 @@ function Pesquisar() {
       <h2>
         <img className="logo" src={logo} alt="Logo Ache Videos" />
       </h2>  
-      <form className="form"> 
+      <form className="form" onSubmit={handleSubmit}> 
         <TextField
           name="search" 
           className="search" 
@@ -39,9 +30,10 @@ function Pesquisar() {
           value={term}
           onChange={handleChange}
           fullWidth
+          required
         />      
         <Button
-          onClick={handleSubmit}
+          type='submit'
           className="btnSearch" 
           variant="contained" 
           color="primary"
