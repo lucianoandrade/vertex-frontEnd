@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TextField, Button } from "@material-ui/core";
 
-import logo from "./img/acheVideos.png";
+import logo from "../../imgs/acheVideos.png";
 import "./styles.scss";
 
 function Pesquisar ({ onTerm }) {
