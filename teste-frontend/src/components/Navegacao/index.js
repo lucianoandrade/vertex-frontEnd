@@ -8,8 +8,6 @@ function Navegacao({page}) {
         <button
           type="button" 
           className="btnPage"  
-          variant="contained" 
-          color="primary"
           onClick={page}
           >
             Anterior
@@ -17,8 +15,6 @@ function Navegacao({page}) {
         <button
           type="button"
           className="btnPage"  
-          variant="contained" 
-          color="primary"
           value={'Proximo'}
           onClick={page}
           >

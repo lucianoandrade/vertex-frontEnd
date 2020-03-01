@@ -23,4 +23,12 @@ ul.MuiList-root.list.MuiList-padding {
             min-width: 200px;
         }
     }
+    .btnDetalhes {
+        margin: 0 5%;
+        padding: 2% 4%;
+        
+        .detalhes {
+            color:#009aa2;
+        }
+    }
 }
