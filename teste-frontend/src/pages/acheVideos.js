@@ -23,7 +23,6 @@ export default () => {
         q: term
       }
     });
-    console.log(response);
 
     setnextPageToken(response.data.nextPageToken);
     setprevPageToken(response.data.prevPageToken);
@@ -39,7 +38,6 @@ export default () => {
     } else {
       setPageInfo(prevPageToken);
     }
-    console.log(e.target.value);
     return handleSubmit(termBusca);
   };
 
