@@ -1,11 +1,11 @@
 import React from "react";
-import Detalhes from '../components/Detalhes';
+import Detalhes from "../components/Detalhes";
 
-export default (props) => {
-    const prop = props  
-    return (
-        <>
-          <Detalhes onDetalhes={prop} />
-        </>
-    )
+export default props => {
+  const detalhes = props;
+  return (
+    <>
+      <Detalhes onDetalhes={detalhes} />
+    </>
+  );
 };

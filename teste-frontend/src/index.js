@@ -1,11 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 import { ThemeProvider } from "@material-ui/core";
 import Mytheme from "./theme/Theme";
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(<ThemeProvider theme={Mytheme}><App /></ThemeProvider>, document.getElementById('root'));
+ReactDOM.render(
+  <ThemeProvider theme={Mytheme}>
+    <App />
+  </ThemeProvider>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
